@@ -1,0 +1,76 @@
+{
+  "name": "soularis-interface",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Soularis Interface",
+  "homepage": "https://github.com/Phaneroz-Labs/soularis-interface#readme",
+  "bugs": {
+    "url": "https://github.com/Phaneroz-Labs/soularis-interface/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com:Phaneroz-Labs/soularis-interface.git"
+  },
+  "author": "Austin Zhu",
+  "scripts": {
+    "build": "NODE_ENV=production next build",
+    "dev": "next dev",
+    "lint": "next lint",
+    "lint-staged": "lint-staged --allow-empty",
+    "prepare": "husky install",
+    "release": "standard-version",
+    "start": "next start",
+    "analyze": "NODE_ENV=production ANALYZE=true next build"
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx}": [
+      "pnpm exec eslint . --fix",
+      "pnpm exec prettier --write ."
+    ]
+  },
+  "dependencies": {
+    "@heroicons/react": "2.0.13",
+    "@phaneroz-labs/soularis-typechain": "0.0.5",
+    "@rainbow-me/rainbowkit": "0.7.4",
+    "@svgr/webpack": "6.5.0",
+    "@tanstack/react-query": "4.14.3",
+    "@vechain/picasso": "2.1.1",
+    "ethers": "5.7.2",
+    "flowbite": "1.5.3",
+    "flowbite-react": "0.3.2",
+    "ipfs-http-client": "59.0.0",
+    "next": "12.3.1",
+    "next-pwa": "5.6.0",
+    "next-themes": "0.2.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.39.1",
+    "recoil": "0.7.6",
+    "wagmi": "0.7.12"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "17.2.0",
+    "@commitlint/config-conventional": "17.2.0",
+    "@next/bundle-analyzer": "13.0.2",
+    "@types/node": "18.11.9",
+    "@types/react": "18.0.25",
+    "@types/react-dom": "18.0.8",
+    "@typescript-eslint/eslint-plugin": "5.42.0",
+    "autoprefixer": "10.4.13",
+    "eslint": "8.26.0",
+    "eslint-config-next": "13.0.2",
+    "eslint-config-standard-with-typescript": "23.0.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-n": "15.4.0",
+    "eslint-plugin-promise": "6.1.1",
+    "husky": "8.0.1",
+    "lint-staged": "13.0.3",
+    "postcss": "8.4.18",
+    "postcss-import": "15.0.0",
+    "prettier": "2.7.1",
+    "prettier-plugin-tailwindcss": "0.1.13",
+    "standard-version": "9.5.0",
+    "tailwindcss": "3.2.2",
+    "typescript": "4.8.4"
+  }
+}
